@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐍 Snake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>🐍 Snake</h1>
+      <div class="scores">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Best: <strong id="best">0</strong></span>
+      </div>
+    </header>
+    <canvas id="board" width="400" height="400"></canvas>
+    <div id="overlay" class="hidden">
+      <p id="overlay-text">Game Over</p>
+      <p class="hint">Press <kbd>Space</kbd> to restart</p>
+    </div>
+    <p class="controls">Arrow keys to move · Space to pause/restart</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
