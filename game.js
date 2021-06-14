@@ -29,7 +29,7 @@ function reset() {
 }
 
 function spawnFood() {
-  while (true) {
+    while (true) {
     const x = Math.floor(Math.random() * COLS);
     const y = Math.floor(Math.random() * ROWS);
     if (!snake.some((s) => s.x === x && s.y === y)) {
